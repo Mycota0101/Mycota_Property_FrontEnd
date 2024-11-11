@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MYCOTA PROPERTY</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#villa-list">Products</a></li>
+                <li><a href="#contact-info" class="contact-btn">Contact</a></li>
+            </ul>
+        </nav>        
+    </header>
+
+    <section id="home">
+        <div class="home-content">
+            <h2>Luxury villa</h2>
+            <a href="#villa-list">
+                <button id="viewProducts">View Products</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- filter harga -->
+    <section id="filter-section">
+        <label for="priceFilter">Filter by Price (in Rp):</label>
+        <input type="number" id="priceFilter" placeholder="Enter maximum price">
+        <button id="filterBtn">Filter</button>
+    </section>
+
+    <!-- filter lokasi -->
+     <!-- coming soon -->
+
+    <section id="villa-list">
+        <div class="villa" data-price="250000000">
+            <img src="../src/m2.jpg" alt="Modern Villa" width="300">
+            <h2>Modern Villa</h2>
+            <p>Price: Rp 250,000,000</p>
+            <p>Location: Surabaya</p>
+            <button class="detail-btn">Detail</button>
+        </div>
+        <div class="villa" data-price="300000000">
+            <img src="../src/m3.jpg" alt="Beachfront Villa" width="300">
+            <h2>Beachfront Villa</h2>
+            <p>Price: Rp 300,000,000</p>
+            <p>Location: Bali</p>
+            <button class="detail-btn">Detail</button>
+        </div>
+        <div class="villa" data-price="500000000">
+            <img src="../src/rumah0.jpg" alt="Luxury Villa" width="300">
+            <h2>Luxury Villa</h2>
+            <p>Price: Rp 500,000,000</p>
+            <p>Location: Jakarta</p>
+            <button class="detail-btn">Detail</button>
+        </div>
+        <div class="villa" data-price="700000000">
+            <img src="../src/background.jpg" alt="Mountain Villa" width="300">
+            <h2>Mountain Villa</h2>
+            <p>Price: Rp 700,000,000</p>
+            <p>Location: Bandung</p>
+            <button class="detail-btn">Detail</button>
+        </div>
+    </section>
+
+    <footer id="contact-info">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>For inquiries or more information about our luxury properties, feel free to contact us:</p>
+            <ul>
+                <li>Email: contact@mycotaproperty.com</li>
+                <li>Phone: +62 812 3456 7890</li>
+                <li>Address: Jalan Luxury No.1, Surabaya, Indonesia</li>
+            </ul>
+        </div>
+    </footer>
+
+        
+    <div id="popup-modal" class="popup-modal">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <p>Coming Soon</p>
+        </div>
+    </div>
+
+
+    <script src="vila.js"></script>
+</body>
+</html>

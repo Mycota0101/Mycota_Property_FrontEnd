@@ -1,0 +1,280 @@
+/* all */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.contact-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* vavbar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    padding-top: 80px; 
+}
+
+
+/* home */
+#home {
+    background: url('src/bg13.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.home-content h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.home-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.home-content button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.home-content button:hover {
+    background-color: #218838;
+}
+
+/* About */
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text {
+    width: 50%;
+}
+
+.text h3 {
+    font-size: 18px;
+    color: #28a745;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.get-in-touch {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    border-bottom: 1px solid #000;
+    padding-bottom: 2px;
+}
+
+.get-in-touch:hover {
+    color: #28a745;
+    border-color: #28a745;
+}
+
+.image {
+    width: 45%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* propertishow */
+#propertishow {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+#propertishow .subtitle {
+    font-size: 18px;
+    color: #28a745;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+#propertishow h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.kartupropertis {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.kartuproperti {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.kartuproperti:hover {
+    transform: translateY(-10px);
+}
+
+.kartuproperti img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.kartuproperti h3 {
+    font-size: 20px;
+    margin: 15px;
+    color: #333;
+}
+
+.kartuproperti p {
+    font-size: 16px;
+    margin: 0 15px 15px;
+    color: #666;
+}
+
+.kartuproperti a {
+    text-decoration: none;
+    color: inherit; 
+    display: block;
+}
+
+.kartuproperti:hover a h3 {
+    color: #28a745; 
+}
+
+.kartuproperti:hover {
+    transform: translateY(-10px);
+}
+
+/* foter */
+#contact-info {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.footer-content ul li {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.footer-content ul li:hover {
+    color: #28a745;
+}
+
+/*transisi*/
+
+html {
+    scroll-behavior: smooth;
+}
